@@ -39,3 +39,42 @@ for rr in range(n_cols):
     else:
        draw_rectangle(x_val, y_val, 20, 20, "green")
     x_val = x_val + 20
+
+t.hideturtle()    
+
+
+
+ts.update()
+input()
+t.clear()
+
+
+n_rows = 20
+y_val = 150
+x_val = -150
+ts.tracer(0)
+for kk in range(n_rows): 
+    for jj in range(n_cols):
+        if kk==jj:
+           draw_rectangle(x_val, y_val, 15, 15, "red")
+        else:
+           draw_rectangle(x_val, y_val, 15, 15, "green")
+        x_val = x_val + 15
+    x_val = -150
+    y_val = y_val - 15
+
+ts.update()
+
+input()
+
+t.clear()
+t.hideturtle()
+
+
+
+ts.tracer(0)
+n_rows = 20; 
+n_cols = 20; 
+x_val = -150; 
+y_val = 150
+
